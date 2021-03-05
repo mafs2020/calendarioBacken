@@ -9,11 +9,10 @@ const sequelize = new Sequelize('eventos', 'root', 'Mafs1920', {
     try {
         await sequelize.authenticate();
         await sequelize.sync();
-        console.log('Connection has been established successfully.');
+        console.log('Se conecto a la base de datos.');
     } catch (error) {
-        console.error('Unable to connect to the database:', error);
+        console.error('Ocurrio un erro al intentar conectar con la Base de Datos:', error);
     }
-
 })()
 
 module.exports = sequelize;

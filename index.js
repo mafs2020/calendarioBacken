@@ -1,11 +1,14 @@
 const express = require('express');
 const app = express();
-
+const cors = require('cors');
+// databases
 require('./db/db');
 
+// middlware
 app.use(express.json());
 app.use( express.urlencoded({extended: false, limit: 100000000}) );
-
+app.use(cors());
+// rutas
 const rutasEvento = require('./rutas/eventos');
 app.use(rutasEvento);
 

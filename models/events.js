@@ -1,4 +1,4 @@
-const { Sequelize, DataTypes, Model } = require('sequelize');
+const { DataTypes, Model } = require('sequelize');
 const sequelize = require('../db/db');
 
 class Event extends Model {};
@@ -32,6 +32,6 @@ Event.init({
     modelName: 'Eventos' // We need to choose the model name
 });
 
-console.log(Event === sequelize.models.Event);
+console.log(Event === sequelize.models.Eventos);
 
 module.exports = {Event};
