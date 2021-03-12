@@ -14,8 +14,8 @@ Event.init({
         defaultValue: new Date()
     },
     color: {
-        type: DataTypes.STRING(10),
-        defaultValue: '#ad2121'
+        type: DataTypes.JSON(10),
+        defaultValue: '{"primary": "#ad2121"}'
     },
     // meta: {
     // incrementsBadgeTotal: true,
