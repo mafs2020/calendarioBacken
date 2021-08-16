@@ -1,5 +1,5 @@
 const { Sequelize } = require('sequelize');
-const sequelize = new Sequelize('eventos', 'root', 'Mafs1920', {
+const sequelize = new Sequelize('xxxxxx', 'xxxxxx', 'xxxxxxx', {
     host: 'localhost',
     dialect: 'mysql'
     // dialect: /* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */
